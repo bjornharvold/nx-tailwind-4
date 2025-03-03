@@ -1,27 +1,27 @@
 {
-  "name": "nx-tailwind-4",
+  "name": "demo",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/nx-tailwind-4/src",
+  "sourceRoot": "apps/demo/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/nx-tailwind-4",
-        "index": "apps/nx-tailwind-4/src/index.html",
-        "browser": "apps/nx-tailwind-4/src/main.ts",
+        "outputPath": "dist/apps/demo",
+        "index": "apps/demo/src/index.html",
+        "browser": "apps/demo/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/nx-tailwind-4/tsconfig.app.json",
+        "tsConfig": "apps/demo/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/nx-tailwind-4/public"
+            "input": "apps/demo/public"
           }
         ],
-        "styles": ["apps/nx-tailwind-4/src/styles.css"],
+        "styles": ["apps/demo/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -52,10 +52,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "nx-tailwind-4:build:production"
+          "buildTarget": "demo:build:production"
         },
         "development": {
-          "buildTarget": "nx-tailwind-4:build:development"
+          "buildTarget": "demo:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -63,7 +63,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "nx-tailwind-4:build"
+        "buildTarget": "demo:build"
       }
     },
     "lint": {
@@ -73,15 +73,15 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/nx-tailwind-4/jest.config.ts"
+        "jestConfig": "apps/demo/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "nx-tailwind-4:build",
+        "buildTarget": "demo:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/nx-tailwind-4/browser",
+        "staticFilePath": "dist/apps/demo/browser",
         "spa": true
       }
     }

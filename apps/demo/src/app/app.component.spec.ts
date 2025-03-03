@@ -14,14 +14,12 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome nx-tailwind-4'
-    );
+    expect(compiled.querySelector('h1')?.textContent).toContain('Welcome demo');
   });
 
-  it(`should have as title 'nx-tailwind-4'`, () => {
+  it(`should have as title 'demo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nx-tailwind-4');
+    expect(app.title).toEqual('demo');
   });
 });

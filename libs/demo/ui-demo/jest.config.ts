@@ -1,8 +1,8 @@
 export default {
-  displayName: 'nx-tailwind-4',
-  preset: '../../jest.preset.js',
+  displayName: 'demo-ui-demo',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/nx-tailwind-4',
+  coverageDirectory: '../../../coverage/libs/demo/ui-demo',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { DemoUiDemoComponent } from '@wink/demo/ui-demo';
 
 @Component({
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [
+    DemoUiDemoComponent
+  ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'nx-tailwind-4';
+  title = 'demo';
 }
