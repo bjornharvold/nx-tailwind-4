@@ -11,19 +11,19 @@
 To run the dev server for your app, use:
 
 ```sh
-npx nx serve nx-tailwind-4
+npx nx serve demo
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx build nx-tailwind-4
+npx nx build demo
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project nx-tailwind-4
+npx nx show project demo
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
