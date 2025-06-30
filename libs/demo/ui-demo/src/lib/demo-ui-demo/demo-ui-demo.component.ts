@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'lib-demo-ui-demo',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './demo-ui-demo.component.html',
   styleUrl: './demo-ui-demo.component.css',
 })
